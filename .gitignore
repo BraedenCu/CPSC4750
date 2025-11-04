@@ -1,0 +1,5 @@
+*.m
+*.tiff
+*.pdf
+.DS_Store
+*.pyc
