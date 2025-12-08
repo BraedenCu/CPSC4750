@@ -25,6 +25,9 @@ def gaborfilter(theta, wavelength, phase, sigma, aspect, ksize=None):
 	xs, ys = np.meshgrid(np.arange(xmin,xmax+1), np.arange(ymax,ymin-1,-1))
 
 	# Your code here
+
+	# note: my gabor filter generates all 16 at once, and returns them
+	# as a list. Got permission from a ULA that this approach was okay.
 	orientations_edge = np.linspace(0, 7*np.pi/4.0, num=8, endpoint=True)
 	orientations_line = np.linspace(0, 3*np.pi/4.0, num=4, endpoint=True)
 	filters = []
