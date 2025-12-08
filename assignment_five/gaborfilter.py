@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def gaborfilter(theta, wavelength, phase, sigma, aspect, ksize=None):
 
 	"""
@@ -67,6 +66,3 @@ def gaborfilter(theta, wavelength, phase, sigma, aspect, ksize=None):
 		filters.append(g_ij)
 
 	return filters
-
-def create_gabor_filter_bank(theta, wavelength, sigma, aspect, ksize=None):
-	pass
